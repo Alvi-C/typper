@@ -9,6 +9,10 @@ const TextArea = () => {
 
   const handleClick = () => {
       setDisplayedText(text)
+  }
+
+  const handleClear = () => {
+      setDisplayedText('')
       setText('')
   }
 
@@ -34,6 +38,12 @@ const TextArea = () => {
           className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mt-4 text-center'
         >
           Post
+        </button>
+        <button
+          onClick={handleClear}
+          className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mt-4 ml-3 text-center'
+        >
+          Clear Post
         </button>
       </div>
       <div>
